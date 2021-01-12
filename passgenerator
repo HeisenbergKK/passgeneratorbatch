@@ -1,0 +1,17 @@
+:start
+cls
+echo Enter The Password:
+set /p password=
+if %password% == %hereiwanttosetmorerandompassword% goto correct
+goto wrong
+:correct
+cls
+echo Correct Password!
+echo Press any key to proceed.
+pause >nul
+goto startprog
+:wrong
+cls
+echo "%password%" is the wrong password.
+pause
+goto start
